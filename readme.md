@@ -1,3 +1,3 @@
-# Start-2022
+# Gulp 22.9 (September 2022)
 
-Start for Nunjucks, SASS, JS Modules, Images minify and webp.
+Gulp start for Nunjucks, SASS, JS Modules, Images minify and webp.
