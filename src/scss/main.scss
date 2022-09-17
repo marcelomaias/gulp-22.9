@@ -1,0 +1,82 @@
+@import "./imports/reset";
+
+:root {
+  --gray: #cdcdcd;
+  --black: #222222;
+  --white: #ffffff;
+  --grayblue: #565d67;
+  --blue: #498af3;
+  --green: #56ccc8;
+  --red: #ea6060;
+}
+
+a, a:visited {
+  color: inherit;
+}
+html {
+  font-size: 62.5%;
+
+}
+body {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.main-header {
+  --background: transparent;
+  --shadow: none;
+  --font: 1.8rem;
+  --padding: 1em 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--background);
+  box-shadow: var(--shadow);
+  transition: all .25s ease;
+  font-size: var(--font);
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-left: 2em;
+    padding: var(--padding);
+  }
+}
+
+.scrolled {
+  --text: var(--black);
+  --text-inverse: var(--white);
+  --background: var(--white);
+  --font: 1.8rem;
+  box-shadow: 1px 1px 10px rgba(0,0,0, .25)
+}
+
+.home-intro{
+  height: 100vh;
+  .container {
+    height: 100vh;
+    background-color: var(--gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h2 {
+      font-size: 4rem;
+      line-height: 1.2;
+    }
+  }
+}
